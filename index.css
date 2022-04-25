@@ -1,0 +1,172 @@
+
+* {
+  padding: 0;
+  margin: 0;
+
+  --black: #191a19;
+  --dark-green: #1e5128;
+  --green: #4e9f3d;
+  --light-green: #d8e9a8;
+}
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.books-heading {
+  font-size: 50px;
+  color: var(--light-green);
+  text-align: center;
+  font-family: 'Marck Script', sans-serif;
+}
+
+.Navigation {
+  position: absolute;
+  background: rgba(78, 159, 61, 0.3);
+  right: 0;
+  border-radius: 15px 0 0 15px;
+}
+
+.Navigation-list {
+  list-style: none;
+  display: flex;
+}
+
+.Navigation-list li {
+  margin: 10px;
+}
+
+.book-list {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: calc(max(15vh, 15vw));
+}
+
+.Book {
+  background-color: rgba(78, 159, 61, 0.3);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Book:nth-child(2n) {
+  background-color: rgba(78, 190, 61, 0.3);
+}
+
+.Book:nth-child(1) {
+  border-radius: 20px 20px 0 0;
+}
+
+.Book:nth-last-child(-n+1) {
+  border-radius: 0 0 20px 20px;
+}
+
+.Book-h2 {
+  color: var(--light-green);
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 600;
+}
+
+.Book-h3 {
+  color: var(--black);
+  font-family: 'Unica One', sans-serif;
+  font-weight: 300;
+}
+
+.Book-btn {
+  border: none;
+  padding: 10px;
+  background-color: var(--black);
+  color: var(--light-green);
+  border-radius: 10px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.Book-btn:hover {
+  border: var(--black) solid 2px;
+  background-color: var(--dark-green);
+  padding: 8px;
+}
+
+.Book-btn:active {
+  border: var(--black) solid 2px;
+  background-color: var(--light-green);
+  color: var(--black);
+  padding: 8px;
+}
+
+.Nav-btn:focus {
+  border: var(--black) solid 2px;
+  background-color: var(--dark-green);
+  padding: 8px;
+}
+
+.add-book {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-book h2 {
+  margin-top: calc(max(15vh, 15vw));
+  color: var(--light-green);
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+}
+
+.add-book ul {
+  background-color: rgba(78, 159, 61, 0.3);
+  border-radius: 12px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.add-book ul li {
+  margin: 10px;
+}
+
+.add-book ul li:nth-child(3) {
+  display: flex;
+}
+
+.add-button {
+  margin-left: auto;
+}
+
+.input {
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow: inset 0 0 10px #000;
+  opacity: 1 !important;
+  padding: 5px;
+  border: none;
+  background-color: var(--light-green);
+}
+
+.input::placeholder {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.contact {
+  width: 50vw;
+  max-width: 500px;
+  color: var(--light-green);
+  margin: 0 auto;
+  background-color: rgba(78, 159, 61, 0.3);
+  padding: 10px;
+  margin-top: calc(max(15vh, 15vw));
+  border-radius: 20px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+}

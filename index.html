@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Marck+Script&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Awasome books</title>
+</head>
+<body>
+    <h1 class="books-heading">Awesome Books</h1>
+    <nav class="Navigation">
+        <ul class="Navigation-list">
+            <li class="Navigation-item">
+                <button id="list" class="Book-btn Nav-btn" type="button">List</button>
+            </li>
+            <li class="Navigation-item">
+                <button id="add" class="Book-btn Nav-btn" type="button">Add new</button>
+            </li>
+            <li class="Navigation-item">
+                <button id="contact" class="Book-btn Nav-btn" type="button">Contant</button>
+            </li>   
+        </ul>
+        <h2 class="time">time</h2>
+    </nav>
+    <div class="book-list">
+        <div id="0" class="Book">
+            <div class="Book-wrapper">
+                <h2 class="Book-h2">loading</h2>
+                <h3 class="Book-h3">loading</h3>
+            </div>
+            <button type="button" class="Delete-btn Book-btn">delete book</button>
+        </div>
+    </div>
+    <p></p>
+    <form action="#" class="add-book">
+        <h2>Add new book</h2>
+        <ul>
+            <li>
+                <input id="title" name="title" class="input" type="text" placeholder="Title">
+            </li>
+            <li>
+                <input id="Author" name="author" class="input" type="text" placeholder="Author">
+            </li>
+            <li>
+                <button name="add" class="add-button Book-btn" type="button" title="button">Add Book</button>
+            </li>
+        </ul>
+    </form>
+    <section class="contact">
+        <h2>Contact information</h2>
+        <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+        <ul>
+            <li>
+                Email: exam@ple.com
+            </li>
+            <li>
+                Github: example.github.io
+            </li>
+        </ul>
+    </section>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
